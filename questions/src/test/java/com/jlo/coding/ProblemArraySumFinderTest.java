@@ -2,10 +2,12 @@ package com.jlo.coding;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,6 +51,35 @@ public class ProblemArraySumFinderTest {
 			
 			count--;
 		}
+	}
+
+	
+
+	@Test
+	public void testRunProblemZero() {
+		
+			
+			ArrayList<Integer> testing =new ArrayList<Integer>();
+			testing.add(0);
+			testing.add(2);
+			testing.add(3);
+			testing.add(3);
+			testing.add(5);
+			int result = 0;//ProblemArraySumFinder.randInt(0,10);
+			try{
+			test1.initializeProblem(testing, Optional.ofNullable(result));	
+			test1.solveProblem();
+			} catch (ProblemInputException e) {
+				System.out.println(e.getMessage());
+			}catch (UnsolvableProblemException e) {
+				System.out.println(e.getMessage());
+			}
+			test1.getRandomInput().forEach(item->System.out.print("["+item+"]"));
+			System.out.println("SOLUTION");
+			System.out.println(test1.getSolution().toString());
+			assertFalse(test1.getSolution().isSolved());
+			
+	
 	}
 
 	

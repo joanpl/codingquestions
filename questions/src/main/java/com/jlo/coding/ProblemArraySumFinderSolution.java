@@ -25,7 +25,7 @@ public class ProblemArraySumFinderSolution<Integer> implements ISolution {
 	private Integer solution;
 
 	public ProblemArraySumFinderSolution(Integer solution) {
-		this.isSolved = first !=null && second != null;
+		this.isSolved = false;
 		this.solution = solution;
 	}
 
@@ -58,6 +58,11 @@ public class ProblemArraySumFinderSolution<Integer> implements ISolution {
 		this.second = null;
 		this.isSolved = false;
 		this.solution = solution;
+		
+	}
+	
+	public void resetSolution() {
+		resetSolution(this.solution);
 		
 	}
 }

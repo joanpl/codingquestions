@@ -6,6 +6,7 @@ import java.util.Optional;
 public interface IProblem<T> {
 	
 	
+	
 	void solveProblem();
 	
 	List<T> generateRandomInput(Optional<Integer> maxSize);
