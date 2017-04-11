@@ -73,21 +73,29 @@ public class App
 		boolean continueSolving = true;
 		while(continueSolving) {
 		        System.out.println( "*********** Please insert the size of the list (you can also type 'quit' if you don't know what to do) *********************" );
-	        try {
-				Object input  = 	in.next();
+		        System.out.println( "Enter Value:");
+		        try {
+				String input  = 	in.next();
 				String quit = "quit";
 				
 				if(	quit.compareTo((String) input) == 0)
+				{	
 					continueSolving = false;
+					System.out.println("returning to main..");
+					return;
+				}
 				
-				int size = (int) input;
-				
-				System.out.println( "*********** Please insert the solution to be found (you can also type 'quit' if you don't know what to do) *********************" );
-				input  = 	System.in.read() ;
+				int size = Integer.parseInt(input);
+				System.out.println( "Thanks");
+				System.out.println( "Enter a Value for a Solution:");
+				input  = 	in.next();
 				if(	quit.compareTo((String) input) == 0)
+				{	
 					continueSolving = false;
-				int solution = (int) input;
-				
+					System.out.println("returning to main..");
+					return;
+				}
+				int solution = Integer.parseInt(input);
 				System.out.println( "*********** Solving for a list of "+size+" random numbers and a solution of " + solution );
 				
 				try{
