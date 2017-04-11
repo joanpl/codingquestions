@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.jlo.coding.exception.ProblemInputException;
+import com.jlo.coding.exception.UnsolvableProblemException;
 
 public class ProblemArraySumFinderTest {
 	
@@ -34,10 +35,14 @@ public class ProblemArraySumFinderTest {
 			int listSize = ProblemArraySumFinder.randInt(-1000, 5000);
 			
 			int result = ProblemArraySumFinder.randInt(-500, 2500);
-			
+			try{
 			test1.initializeProblem(test1.generateRandomInput(Optional.of(listSize)), Optional.ofNullable(result));	
 			test1.solveProblem();
-		
+			} catch (ProblemInputException e) {
+				System.out.println(e.getMessage());
+			}catch (UnsolvableProblemException e) {
+				System.out.println(e.getMessage());
+			}
 			test1.getRandomInput().forEach(item->System.out.print("["+item+"]"));
 			System.out.println("SOLUTION");
 			System.out.println(test1.getSolution().toString());

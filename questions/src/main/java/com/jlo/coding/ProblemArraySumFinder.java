@@ -111,6 +111,12 @@ public class ProblemArraySumFinder<T> implements IProblem<T> {
 		}
 	}
 
+	
+	public void resetProblem() {
+		this.randomInput = new ArrayList<Integer>();
+		this.sumResult = defaultSUM;
+		this.solution.resetSolution(this.sumResult);
+	}
 
 	private void setRandomInput(ArrayList<Integer> input) {
 		this.randomInput = input;

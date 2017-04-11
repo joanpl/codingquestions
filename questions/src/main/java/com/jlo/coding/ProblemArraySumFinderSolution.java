@@ -52,4 +52,12 @@ public class ProblemArraySumFinderSolution<Integer> implements ISolution {
 	public String toString() {
 		return "solution value["+this.solution+"] is solved ["+ this.getSolved()+"] \n First["+this.first+"]" + "Second["+this.second+"]";
 	}
+
+	public void resetSolution(Integer solution) {
+		this.first = null;
+		this.second = null;
+		this.isSolved = false;
+		this.solution = solution;
+		
+	}
 }
