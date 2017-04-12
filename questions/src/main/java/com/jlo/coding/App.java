@@ -1,11 +1,11 @@
 package com.jlo.coding;
 
-import java.io.IOException;
 import java.util.Optional;
 import java.util.Scanner;
 
 import com.jlo.coding.exception.ProblemInputException;
 import com.jlo.coding.exception.UnsolvableProblemException;
+import com.jlo.coding.problems.ProblemArraySumFinder;
 
 /**
  * Hello world!

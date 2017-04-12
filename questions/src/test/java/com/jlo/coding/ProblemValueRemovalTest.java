@@ -3,15 +3,14 @@ package com.jlo.coding;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-import java.util.List;
 import java.util.Optional;
 
-import org.hamcrest.collection.IsEmptyCollection;
 import org.junit.Before;
 import org.junit.Test;
 
 import com.jlo.coding.exception.ProblemInputException;
 import com.jlo.coding.exception.UnsolvableProblemException;
+import com.jlo.coding.problems.ProblemValueRemoval;
 
 public class ProblemValueRemovalTest {
 	ProblemValueRemoval problem;

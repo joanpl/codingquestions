@@ -1,4 +1,4 @@
-package com.jlo.coding;
+package com.jlo.coding.problems;
 
 import java.util.ArrayList;
 import java.util.StringJoiner;

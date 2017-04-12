@@ -1,4 +1,4 @@
-package com.jlo.coding;
+package com.jlo.coding.problems;
 
 public class ProblemArraySumFinderSolution<Integer> implements ISolution {
 	

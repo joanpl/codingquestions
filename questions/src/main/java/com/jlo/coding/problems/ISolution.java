@@ -1,4 +1,4 @@
-package com.jlo.coding;
+package com.jlo.coding.problems;
 
 public interface ISolution {
 	public boolean getSolved();

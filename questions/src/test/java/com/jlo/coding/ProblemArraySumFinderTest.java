@@ -1,12 +1,9 @@
 package com.jlo.coding;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -17,6 +14,7 @@ import org.junit.Test;
 
 import com.jlo.coding.exception.ProblemInputException;
 import com.jlo.coding.exception.UnsolvableProblemException;
+import com.jlo.coding.problems.*;
 
 public class ProblemArraySumFinderTest {
 	
